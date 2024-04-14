@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.body {
+  background: #1e1e1e;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4vw;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body .super {
+  color: #72db73;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.super {
+  font-family: "Single Day", cursive;
+}
+form input {
+  margin: 12px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+  background-color: #292929;
+  border: 2px solid red;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #72db73;
+}
+
+form .error {
+  color: red;
+  font-size: 14px;
+  width: 90%;
+  max-width: 400px;
+  margin: -10px auto 8px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 12px auto;
+  text-align: left;
+}
+
+form label input[type="checkbox"] {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+form button {
+  width: 90%;
+  max-width: 400px;
+  margin: 24px auto;
+  border-radius: 24px;
+  padding: 10px 12px;
+  color: white;
+  background-color: #72db73;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #5cb85c;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #7c7c7c;
+  width: 90%;
+  max-width: 400px;
+  margin: 8px auto;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.footer span {
+  color: #72db73;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .body {
+    padding: 2vw;
+  }
+}
